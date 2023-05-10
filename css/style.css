@@ -68,7 +68,7 @@ header nav a img{
 
 
 /*!----------main----------*/
-/*-----index----- */
+/*!---------index---------- */
 
 .moes{
     background-image: url("../img/Malaria-Gin.png");
@@ -224,7 +224,7 @@ header nav a img{
     text-align: center;
 }
 
-/*-----page acerca de nosotros----- */
+/*!-----page acerca de nosotros----- */
 
 .bienbenidos{
     display: flex;
@@ -443,9 +443,3 @@ footer p{
         height: 350px;
     }
 }
-
-
-
-
-
-
