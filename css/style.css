@@ -23,7 +23,7 @@ header{
     z-index: 5;
 }
 
-header nav ul li a{
+.nav-link{
     font-size: 15px;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
@@ -51,12 +51,12 @@ header nav ul li a{
 }
 
 .dropdown-menu {
-    color: rgb(255 255 255);
-    background-color: rgb(0 0 0);
+    color: white;
+    background-color: black;
 }
 
-.dropdown-item {
-    color: rgb(255 255 255);
+.dropdown-item{
+    color: white;
     background-color: black;
 }
 

@@ -1,0 +1,22 @@
+footer{
+    div{
+        display: flex;
+        justify-content:right;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.48);
+        a{
+            i{
+                font-size: 25px;
+                color: white;
+                margin: 15px;                
+            } 
+        }
+    }
+    p{
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-style: oblique;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
