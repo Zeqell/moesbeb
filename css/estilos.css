@@ -17,25 +17,31 @@ header {
   header .navbar-light {
     color: #f5eeee;
     border-color: rgba(129, 44, 209, 0.491); }
-    header .navbar-light .container-fluid .navbar-brand img {
+    header .navbar-light .navbar-brand img {
       width: 130px;
       height: 130px;
       border-radius: 10px; }
-    header .navbar-light .container-fluid .navbar-toggler {
+    header .navbar-light .navbar-toggler {
       color: white;
       border-color: rgba(129, 44, 209, 0.491);
       background-color: white;
       border: 1px solid white; }
-    header .navbar-light .container-fluid .navbar-collapse .navbar-nav {
-      color: #f5eeee; }
-      header .navbar-light .container-fluid .navbar-collapse .navbar-nav .navbar-item .nav-link {
+    header .navbar-light .collapse .navbar-collapse {
+      color: white; }
+      header .navbar-light .collapse .navbar-collapse .navbar-nav {
         color: #f5eeee; }
-      header .navbar-light .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu {
-        color: white;
-        background-color: black; }
-        header .navbar-light .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li .dropdown-item {
+        header .navbar-light .collapse .navbar-collapse .navbar-nav .navbar-item {
+          color: white; }
+          header .navbar-light .collapse .navbar-collapse .navbar-nav .navbar-item .nav-link {
+            color: #f5eeee;
+            font-size: 15px;
+            font-family: 'Alegreya Sans SC', sans-serif; }
+        header .navbar-light .collapse .navbar-collapse .navbar-nav .dropdown-menu {
           color: white;
           background-color: black; }
+          header .navbar-light .collapse .navbar-collapse .navbar-nav .dropdown-menu li .dropdown-item {
+            color: white;
+            background-color: black; }
 
 main .moes {
   background-image: url("../img/Malaria-Gin.png");
