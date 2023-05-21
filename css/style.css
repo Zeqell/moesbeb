@@ -35,6 +35,10 @@ header nav a img{
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgba(129, 44, 209, 0.491);
+}
+
 .navbar-light .navbar-toggler{
     color: white;
     border-color: rgba(129, 44, 209, 0.491);
@@ -48,6 +52,9 @@ header nav a img{
 .dropdown-item{
     color: white;
     background-color: black;
+}
+.dropdown-item:hover{
+    color: rgba(129, 44, 209, 0.491);
 }
 
 /*!----------main----------*/
@@ -232,9 +239,13 @@ header nav a img{
     margin-top: 35px;
     width: 550px;
     height: 600px;
+    transition: 1s;
+}
+
+.bienbenidos img:hover{
     -webkit-box-shadow: 0px 0px 86px 5px rgba(153,57,158,0.56);
--moz-box-shadow: 0px 0px 86px 5px rgba(153,57,158,0.56);
-box-shadow: 0px 0px 86px 5px rgba(153,57,158,0.56);
+    -moz-box-shadow: 0px 0px 86px 5px rgba(153,57,158,0.56);
+    box-shadow: 0px 0px 86px 5px rgba(153,57,158,0.56);
 }
 
 .bienbenidos div{
@@ -267,9 +278,13 @@ box-shadow: 0px 0px 86px 5px rgba(153,57,158,0.56);
     width: 700px;
     height: 500px;
     margin-bottom: 25px;
+    transition: 1s;
+}
+
+.acerca img:hover{
     -webkit-box-shadow: 0px 0px 86px 5px rgba(153,57,158,0.56);
--moz-box-shadow: 0px 0px 86px 5px rgba(153,57,158,0.56);
-box-shadow: 0px 0px 86px 5px rgba(153,57,158,0.56);
+    -moz-box-shadow: 0px 0px 86px 5px rgba(153,57,158,0.56);
+    box-shadow: 0px 0px 86px 5px rgba(153,57,158,0.56);
 }
 
 .acerca div{

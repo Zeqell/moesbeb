@@ -3,12 +3,16 @@ footer{
         display: flex;
         justify-content:right;
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.48);
+        background-color: black;
         a{
             i{
                 font-size: 25px;
                 color: white;
-                margin: 15px;                
+                margin: 15px; 
+                transition: 1s;
+                &:hover{
+                    color: rgba(153,57,158,0.56);
+                }               
             } 
         }
     }
