@@ -5,7 +5,7 @@
         img{
             width: 70%;
             height: 400px;
-    }
+        }
     }
     .grid-galeria{
         grid-template-columns: repeat(2,1fr);
@@ -13,8 +13,23 @@
         .grid-item{
             grid-column: span 1;
             grid-row: span 1;
+        }
     }
+    .bienbenidos{
+        flex-direction: column-reverse;
+        align-items: center;
+        img{
+            width: 350px;
+            height: 400px;
+        }
     }
+    .acerca{
+        img{
+            width: 350px;
+            height: 400px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 700px){
@@ -31,6 +46,31 @@
         img{
             width: 70%;
             height: 300px;
+        }
+    }
+    .bienbenidos{
+        flex-direction: column-reverse;
+        align-items: center;
+        img{
+            width: 270px;
+            height: 280px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    .bienbenidos{
+        flex-direction: column-reverse;
+        align-items: center;
+        img{
+            width: 250px;
+            height: 200px;
+        }
+    }
+    .acerca{
+        img{
+            width: 150px;
+            height: 100px;
         }
     }
 }
@@ -53,9 +93,18 @@
     .bebidas{
         flex-direction: column-reverse;
         text-align: center;
+        align-items: center;
         img{
             width: 70%;
             height: 250px;
+        }
+    }
+    .bienbenidos{
+        flex-direction: column-reverse;
+        align-items: center;
+        img{
+            width: 250px;
+            height: 200px;
         }
     }
 }

@@ -9,6 +9,7 @@ ul {
 a {
   text-decoration: none; }
 
+/*------PALETA DE COLORES-----*/
 header {
   background-color: black;
   position: sticky;
@@ -83,7 +84,7 @@ header {
 
 main {
   background: black;
-  background: linear-gradient(90deg, black 0%, rgba(153, 57, 158, 0.56) 100%, rgba(16, 35, 173, 0.635731) 100%); }
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.868785) 10%, #d277c6 63%, black 90%); }
   main .moes {
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/bjarne-fondo.jpg");
     width: 100%;
@@ -92,7 +93,7 @@ main {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: aliceblue;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +102,7 @@ main {
       font-family: 'Alegreya Sans SC', sans-serif;
       color: white;
       font-size: 70px;
-      border: 2px solid rgba(153, 57, 158, 0.56);
+      border: 2px solid rgba(129, 44, 209, 0.491);
       padding: 10px;
       margin: 20px;
       text-align: center; }
@@ -131,12 +132,14 @@ main {
         font-family: 'Alegreya Sans SC', sans-serif;
         font-size: 35px;
         text-align: center;
-        border: 2px solid rgba(153, 57, 158, 0.56);
-        padding: 5px; }
+        border: 2px solid rgba(129, 44, 209, 0.491);
+        padding: 5px;
+        color: white; }
       main .bebidas div p {
         font-family: 'Alegreya Sans SC', sans-serif;
         font-size: 20px;
-        text-align: center; }
+        text-align: center;
+        color: white; }
   main .productos {
     display: flex;
     justify-content: space-around;
@@ -171,7 +174,7 @@ main {
         transition: 1s; }
         main .productos div a:hover {
           transform: scale3d(1.1);
-          background-color: rgba(153, 57, 158, 0.56); }
+          background-color: rgba(129, 44, 209, 0.491); }
   main .grid-galeria {
     width: 100%;
     margin-top: 50px;
@@ -205,34 +208,11 @@ main {
       grid-column: span 2; }
 
 /*----acerca de nosotros----*/
-main .fotos {
-  background-color: black;
-  height: 83vh;
-  display: grid;
-  place-content: center; }
-  main .fotos .contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 600px; }
-    main .fotos .contenedor:hover img {
-      opacity: .3; }
-    main .fotos .contenedor img {
-      width: 50%;
-      height: 100%;
-      transform: perspective(125px) rotateY(10deg);
-      transition: 500ms;
-      padding: 20px; }
-      main .fotos .contenedor img:hover {
-        transform: rotateY(0deg);
-        opacity: 1; }
-
 main .bienbenidos {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black; }
+  flex-wrap: wrap; }
   main .bienbenidos img {
     border-radius: 5px;
     margin-top: 35px;
@@ -255,7 +235,7 @@ main .bienbenidos {
       transition: 1s; }
       main .bienbenidos div h2:hover {
         font-size: 45px;
-        color: rgba(153, 57, 158, 0.56); }
+        color: rgba(129, 44, 209, 0.491); }
     main .bienbenidos div p {
       font-size: 20px;
       text-align: center; }
@@ -264,11 +244,11 @@ main .acerca {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
-  background-color: black; }
+  flex-direction: column-reverse;
+  flex-wrap: wrap; }
   main .acerca img {
     border-radius: 5px;
-    width: 700px;
+    width: 550px;
     height: 500px;
     margin-bottom: 25px;
     transition: 1s; }
@@ -288,20 +268,123 @@ main .acerca {
       transition: 1s; }
       main .acerca div h2:hover {
         font-size: 45px;
-        color: rgba(153, 57, 158, 0.56); }
+        color: rgba(129, 44, 209, 0.491); }
     main .acerca div p {
       font-size: 20px;
       text-align: center; }
 
 /*----servicios----*/
+main section .servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  main section .servicios h2 {
+    font-size: 35px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    transition: 1s; }
+    main section .servicios h2:hover {
+      color: rgba(129, 44, 209, 0.491); }
+  main section .servicios p {
+    font-size: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white; }
+
+main .retiro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin: 10px; }
+  main .retiro img {
+    width: 500px;
+    border-radius: 5px; }
+  main .retiro div h2 {
+    font-size: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    transition: 1s; }
+    main .retiro div h2:hover {
+      color: rgba(129, 44, 209, 0.491); }
+  main .retiro div p {
+    font-size: 15px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgba(129, 44, 209, 0.491); }
+
+main .envio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px; }
+  main .envio img {
+    width: 550px;
+    height: 350px;
+    border-radius: 5px; }
+  main .envio div h2 {
+    font-size: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    transition: 1s; }
+    main .envio div h2:hover {
+      color: rgba(129, 44, 209, 0.491); }
+  main .envio div p {
+    font-size: 15px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgba(129, 44, 209, 0.491); }
+
+main .express {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin: 10px; }
+  main .express img {
+    width: 450px;
+    border-radius: 5px; }
+  main .express div h2 {
+    font-size: 25px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    transition: 1s; }
+    main .express div h2:hover {
+      color: rgba(129, 44, 209, 0.491); }
+  main .express div p {
+    font-size: 15px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgba(129, 44, 209, 0.491); }
+
 /*----tienda----*/
 main .tiendaproducto {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex-wrap: wrap;
-  background-color: black; }
+  flex-wrap: wrap; }
   main .tiendaproducto div img {
     width: 300px;
     height: 300px; }
@@ -313,7 +396,6 @@ main .tiendaproducto {
     padding: 10px; }
 
 main section .nuestrosproductos {
-  background-color: black;
   text-align: center;
   padding: 35px; }
   main section .nuestrosproductos h2 {
@@ -331,7 +413,6 @@ main .tienda {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: black;
   padding: 20px; }
   main .tienda div {
     width: 250px;
@@ -357,7 +438,7 @@ main .tienda {
       transition: 1s; }
       main .tienda div a:hover {
         transform: scale3d(1.1);
-        background-color: rgba(153, 57, 158, 0.56); }
+        background-color: rgba(129, 44, 209, 0.491); }
 
 footer div {
   display: flex;
@@ -391,7 +472,16 @@ footer p {
     grid-template-rows: 200px; }
     .grid-galeria .grid-item {
       grid-column: span 1;
-      grid-row: span 1; } }
+      grid-row: span 1; }
+  .bienbenidos {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .bienbenidos img {
+      width: 350px;
+      height: 400px; }
+  .acerca img {
+    width: 350px;
+    height: 400px; } }
 
 @media screen and (max-width: 700px) {
   header {
@@ -404,7 +494,24 @@ footer p {
     text-align: center; }
     .bebidas img {
       width: 70%;
-      height: 300px; } }
+      height: 300px; }
+  .bienbenidos {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .bienbenidos img {
+      width: 270px;
+      height: 280px; } }
+
+@media screen and (max-width: 650px) {
+  .bienbenidos {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .bienbenidos img {
+      width: 250px;
+      height: 200px; }
+  .acerca img {
+    width: 150px;
+    height: 100px; } }
 
 @media screen and (max-width: 450px) {
   .grid-galeria {
@@ -419,7 +526,14 @@ footer p {
       margin: 5px; }
   .bebidas {
     flex-direction: column-reverse;
-    text-align: center; }
+    text-align: center;
+    align-items: center; }
     .bebidas img {
       width: 70%;
-      height: 250px; } }
+      height: 250px; }
+  .bienbenidos {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .bienbenidos img {
+      width: 250px;
+      height: 200px; } }

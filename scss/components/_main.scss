@@ -1,6 +1,6 @@
 main{
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(153,57,158,0.56) 100%, rgba(16,35,173,0.6357308584686775) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8687850140056023) 10%, rgba(210,119,198,1) 63%, rgba(0,0,0,1) 90%);
     .moes{
         background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/bjarne-fondo.jpg");
         width: 100%;
@@ -9,23 +9,23 @@ main{
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        color: aliceblue;
+        color: $color-principal;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         h2{
             font-family: 'Alegreya Sans SC', sans-serif;
-            color: white;
+            color: $color-principal;
             font-size: 70px;
-            border: 2px solid rgba(153,57,158,0.56);
+            border: 2px solid $color-secundario;
             padding: 10px;
             margin: 20px;
             text-align: center;
         }
         p{
             font-family: 'Alegreya Sans SC', sans-serif;
-            color: white;
+            color: $color-principal;
             font-size: 50px;
             text-align: center;
         }
@@ -52,13 +52,15 @@ main{
                 font-family: 'Alegreya Sans SC', sans-serif;
                 font-size: 35px;
                 text-align: center;
-                border: 2px solid rgba(153,57,158,0.56);
+                border: 2px solid $color-secundario;
                 padding: 5px;
+                color: $color-principal;
             }
             p{
                 font-family: 'Alegreya Sans SC', sans-serif;
                 font-size: 20px;
                 text-align: center;
+                color: $color-principal;
             }
         }
     }
@@ -88,18 +90,18 @@ main{
                 margin: 15px;
                 display: flex;
                 justify-content: center;
-                color: white;
+                color: $color-principal;
             }
             a{
                 background: black;
-                color: white;
+                color: $color-principal;
                 padding: 10px;
                 display: flex;
                 justify-content: center;
                 transition: 1s;
                 &:hover{
                     transform: scale3d(1.1);
-                    background-color: rgba(153,57,158,0.56);
+                    background-color: $color-secundario;
                 }
             }
         }
@@ -120,7 +122,7 @@ main{
                 object-fit: cover;
             }
             h3{
-                color: white;
+                color:$color-principal;
                 position: absolute;
                 bottom: 0;
                 width: 100%;
@@ -146,40 +148,11 @@ main{
 }
 /*----acerca de nosotros----*/
 main{
-    .fotos{
-        background-color: black;
-        height: 83vh;
-        display: grid;
-        place-content: center;
-        .contenedor{
-            display: flex;
-            justify-content:space-between;
-            align-items: center;
-            width: 100%;
-            max-width: 600px;
-            &:hover img{
-                opacity: .3;
-            }
-            img{
-                width: 50%;
-                height: 100%;
-                transform: perspective(125px) rotateY(10deg);
-                transition: 500ms;
-                padding: 20px;
-                &:hover{
-                    transform: rotateY(0deg);
-                    opacity: 1;
-                }
-    
-            }
-        }
-    }
-    
     .bienbenidos{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        flex-wrap: wrap;
         img{
             border-radius: 5px;
             margin-top: 35px;
@@ -196,7 +169,7 @@ main{
         div{
             margin: 50px;
             width: 50%;
-            color: white;
+            color: $color-principal;
             font-family: 'Alegreya Sans SC', sans-serif;
             h2{
                 font-size: 40px;
@@ -204,9 +177,8 @@ main{
                 transition: 1s;
                 &:hover{
                     font-size: 45px;
-                    color: rgba(153,57,158,0.56);
+                    color: $color-secundario;
                 }
-
             }
             p{
                 font-size: 20px;
@@ -214,18 +186,16 @@ main{
             }
         }
 
-    
-
     }
     .acerca{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row-reverse;
-        background-color: black;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
         img{
             border-radius: 5px;
-            width: 700px;
+            width: 550px;
             height: 500px;
             margin-bottom: 25px;
             transition: 1s;
@@ -239,7 +209,7 @@ main{
         div{
             margin: 50px;
             width: 50%;
-            color: white;
+            color: $color-principal;
             font-family: 'Alegreya Sans SC', sans-serif;
             h2{
                 font-size: 40px;
@@ -247,7 +217,7 @@ main{
                 transition: 1s;
                 &:hover{
                     font-size: 45px;
-                    color: rgba(153,57,158,0.56);
+                    color: $color-secundario;
                 }
 
             }
@@ -261,7 +231,139 @@ main{
     }
 }
 /*----servicios----*/
+main{
+    section{
+        .servicios{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h2{
+                font-size: 35px;
+                font-family: 'Alegreya Sans SC', sans-serif;
+                color: $color-principal;
+                margin: 15px;
+                padding: 10px;
+                transition: 1s;
+                &:hover{
+                    color: $color-secundario;
+                }
+            }
+            p{
+                font-size: 25px;
+                font-family: 'Alegreya Sans SC', sans-serif;
+                color: $color-principal;
+            }
+        }
 
+    }
+    .retiro{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            margin: 10px;
+        img{
+            width: 500px;
+            border-radius: 5px;
+        }
+        div{
+            h2{
+                font-size: 25px;
+                font-family: 'Alegreya Sans SC', sans-serif;
+                color: $color-principal;
+                margin: 15px;
+                padding: 10px;
+                text-align: center;
+                transition: 1s;
+                &:hover{
+                    color: $color-secundario;
+                }
+            }
+            p{
+                font-size: 15px;
+                font-family: 'Alegreya Sans SC', sans-serif;
+                color: $color-principal;
+                margin: 15px;
+                padding: 10px;
+                text-align: center;
+                border: 2px solid $color-secundario;
+            }
+        }
+
+    }
+    .envio{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 10px;
+        img{
+            width: 550px;
+            height: 350px;
+            border-radius: 5px;
+        }
+        div{
+            h2{
+                font-size: 25px;
+                font-family: 'Alegreya Sans SC', sans-serif;
+                color: $color-principal;
+                margin: 15px;
+                padding: 10px;
+                text-align: center;
+                transition: 1s;
+                &:hover{
+                    color: $color-secundario;
+                }
+            }
+            p{
+                font-size: 15px;
+                font-family: 'Alegreya Sans SC', sans-serif;
+                color: $color-principal;
+                margin: 15px;
+                padding: 10px;
+                text-align: center;
+                border: 2px solid $color-secundario;
+            }
+        }
+
+    }
+    .express{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            margin: 10px;
+        img{
+            width: 450px;
+            border-radius: 5px;
+
+        }
+        div{
+            h2{
+                font-size: 25px;
+                font-family: 'Alegreya Sans SC', sans-serif;
+                color: $color-principal;
+                margin: 15px;
+                padding: 10px;
+                text-align: center;
+                transition: 1s;
+                &:hover{
+                    color: $color-secundario;
+                }
+            }
+            p{
+                font-size: 15px;
+                font-family: 'Alegreya Sans SC', sans-serif;
+                color: $color-principal;
+                margin: 15px;
+                padding: 10px;
+                text-align: center;
+                border: 2px solid $color-secundario;
+            }
+        }
+    }
+}
 /*----tienda----*/
 main{
 
@@ -271,7 +373,6 @@ main{
         justify-content: center;
         text-align: center;
         flex-wrap: wrap;
-        background-color: black;
         div{
             img{
                 width: 300px;
@@ -281,8 +382,8 @@ main{
             h2{
                 font-size: 40px;
                 font-family: 'Alegreya Sans SC', sans-serif;
-                color: white;
-                border: 2px solid white;
+                color: $color-principal;
+                border: 2px solid $color-principal;
                 padding: 10px;
 
             }
@@ -291,19 +392,18 @@ main{
     }
     section{
         .nuestrosproductos{
-            background-color: black;
             text-align: center;
             padding: 35px;
             h2{
                 font-size: 30px;
                 font-family: 'Alegreya Sans SC', sans-serif;
-                color: white;
+                color: $color-principal;
 
             }
             p{
                 font-size: 25px;
                 font-family: 'Alegreya Sans SC', sans-serif;
-                color: white;
+                color: $color-principal;
                 padding: 10px;
 
             }
@@ -316,7 +416,6 @@ main{
         justify-content:space-between;
         align-items: center;
         flex-wrap: wrap;
-        background-color: black;
         padding: 20px;
         div{
             width: 250px;
@@ -331,12 +430,12 @@ main{
                 margin: 15px;
                 display: flex;
                 justify-content: center;
-                color: white;
+                color: $color-principal;
                 font-size: 15px;
 
             }
             a{
-                background: white;
+                background: $color-principal;
                 color: black;
                 padding: 10px;
                 display: flex;
@@ -346,7 +445,7 @@ main{
                 transition: 1s;
                 &:hover{
                     transform: scale3d(1.1);
-                    background-color: rgba(153,57,158,0.56);
+                    background-color: $color-secundario;
                 }
 
             }

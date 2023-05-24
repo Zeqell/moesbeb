@@ -4,11 +4,11 @@ header{
     top: 0;
     z-index: 5;
     .navbar-light{
-                    color: white;
+                    color: $color-principal;
                     font-size: 15px;
                     font-family: 'Alegreya Sans SC', sans-serif;
                     &hover{
-                    color: rgba(129, 44, 209, 0.491);
+                    color: $color-secundario;
         }
 
             .navbar-brand{
@@ -19,81 +19,81 @@ header{
                 }
             }
             .navbar-toggler{
-                            color: white;
-                            border-color: rgba(129, 44, 209, 0.491);
-                            background-color: white;
+                            color: $color-principal;
+                            border-color: $color-secundario;
+                            background-color: $color-principal;
                 .navbar-toggler-icon{
-                                        color: white;
-                                        border-color: rgba(129, 44, 209, 0.491);
-                                        background-color: white;
+                                        color: $color-principal;
+                                        border-color: $color-secundario;
+                                        background-color: $color-principal;
                 }
             }
 
                 .navbar-nav{
-                            color: white;
+                            color: $color-principal;
                             font-size: 15px;
                             font-family: 'Alegreya Sans SC', sans-serif;
 
                         .nav-link{
-                                    color: white;
+                                    color: $color-principal;
                                     font-size: 15px;
                                     font-family: 'Alegreya Sans SC', sans-serif;
                                     &:hover{
-                                    color: rgba(129, 44, 209, 0.491);
+                                    color: $color-secundario;
                             }
                         }
 
 
                         .nav-link{
-                                    color: white;
+                                    color: $color-principal;
                                     font-size: 15px;
                                     font-family: 'Alegreya Sans SC', sans-serif;
                                     &:hover{
-                                        color: rgba(129, 44, 209, 0.491);
+                                        color: $color-secundario;
                             }
                         }
                     
 
                         .nav-link .dropdown-toggle{
-                                                    color: white;
+                                                    color: $color-principal;
                                                     font-size: 15px;
                                                     font-family: 'Alegreya Sans SC', sans-serif;
                                                     &:hover{
-                                                    color: rgba(129, 44, 209, 0.491);
+                                                    color: $color-secundario;
                             }                       
                         }
                         .dropdown-menu{
                             background-color: black;
                             li{
                                 .dropdown-item{
-                                                color: white;
+                                                color: $color-principal;
                                                 background-color: black;
                                                 &:hover{
-                                                color: rgba(129, 44, 209, 0.491);
+                                                color: $color-secundario;
                                     }
                                 }
                             }
                             li{
                                 .dropdown-item{
-                                                color: white;
+                                                color: $color-principal;
                                                 background-color: black;
                                                 &:hover{
-                                                color: rgba(129, 44, 209, 0.491);
+                                                color: $color-secundario;
                                     }
                                 }
                             }
                             li{
                                 .dropdown-divider{
-                                                    color: white;
+                                                    color: $color-principal;
                                                     background-color: black;
                                 }
                             }
                             li{
                                 .dropdown-item{    
-                                                color: white;
+                                                color: $color-principal;
                                                 background-color: black;
                                                 &:hover{
-                                                color: rgba(129, 44, 209, 0.491);
+                                                color: $color-secundario;
                                     }
                                 }
                             }
@@ -101,11 +101,11 @@ header{
                     
 
                         .nav-link{
-                                    color: white;
+                                    color: $color-principal;
                                     font-size: 15px;
                                     font-family: 'Alegreya Sans SC', sans-serif;
                                     &:hover{
-                                    color: rgba(129, 44, 209, 0.491);
+                                    color: $color-secundario;
                             }                            
                         }
                     
