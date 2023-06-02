@@ -63,43 +63,35 @@
         </nav>
     </header>
     <main>
-        <section>            
-            <h1>Contactate con MoesBeb</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                inventore obcaecati, commodi laborum ullam, maiores voluptatibus amet
-                dolorum corporis eum fuga, facere impedit veniam labore neque officiis
-                quaerat. Dolor, excepturi?
-            </p>
-        </section>
-        <section>
-            <h2>Contacto</h2>
-            <form action="" method="" enctype=""></form>
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>
-            <div>
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="apellido">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div>
-                <label for="password">Contraseña:</label>
-                <input type="password" name="password" id="password">
-            </div>
-            <div>
-                <h3>Escribinos</h3>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <input type="submit">
-                <input type="reset">
-            </div>
-
+        <section class="form_wrap">
+            <section class="cantact_info">
+                <section class="info_title">
+                    <span class="fa fa-user-circle"></span>
+                    <h1>INFORMACION<br>DE CONTACTO</h1>
+                </section>
+                <section class="info_items">
+                    <p><span class="fa fa-envelope"></span> info.contact@gmail.com</p>
+                    <p><span class="fa fa-mobile"></span> +549(xxx) xxx-xxxxxxx</p>
+                </section>
+            </section>
+            <form action="" class="form_contact">
+                <h2>Envia un mensaje</h2>
+                <div class="user_info">
+                    <label for="names">Nombre y Apellido *</label>
+                    <input type="text" id="names">
+    
+                    <label for="phone">Telefono / Celular</label>
+                    <input type="text" id="phone">
+    
+                    <label for="email">Correo electronico *</label>
+                    <input type="text" id="email">
+    
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje"></textarea>
+                    
+                    <input type="button" value="Enviar Mensaje" id="btnSend">
+                </div>
+            </form>
         </section>
     </main>
     <footer>

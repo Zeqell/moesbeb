@@ -1,35 +1,83 @@
-@media screen and (max-width:950px){
-    .bebidas{
-        flex-direction: column-reverse;
-        text-align: center;
-        img{
-            width: 70%;
-            height: 400px;
+@media screen and (max-width:1200px){
+    main{
+        .bienbenidos{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        section{
+            .nuestrosproductos{
+                justify-content: center;
+                align-items: center;
+                h2{
+                    text-align: center;
+                    padding-top: 20px;
+                }
+            }
         }
     }
-    .grid-galeria{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 200px;
-        .grid-item{
-            grid-column: span 1;
-            grid-row: span 1;
-        }
-    }
-    .bienbenidos{
-        flex-direction: column-reverse;
-        align-items: center;
-        img{
-            width: 350px;
-            height: 400px;
-        }
-    }
-    .acerca{
-        img{
-            width: 350px;
-            height: 400px;
+}
+
+@media screen and (max-width:920px){
+    main{
+        .tienda{
+            justify-content: space-around;
         }
     }
 
+}
+
+@media screen and (max-width:900px){
+    main{
+        .bebidas{
+        flex-direction: column-reverse;
+        img{
+            width: 450px;
+            height: 450px;
+        }
+        }  
+    }
+}
+
+@media screen and (max-width:880px){
+    main{
+        .grid-galeria{
+            grid-template-columns: repeat(2,1fr);
+            .grid-item{
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+        .retiro{
+            flex-direction: column-reverse;
+            img{
+                width: 450px;
+            }
+        }
+        .envio{
+            flex-direction: column-reverse;
+            img{
+                width: 450px;
+            }            
+        }
+        .express{
+            flex-direction: column-reverse;
+            img{
+                width: 400px;
+            }
+        }
+    }
+    footer{
+        div{
+            justify-content: center;
+            a{
+                i{
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        
+        }
+    }
 }
 
 @media screen and (max-width: 700px){
@@ -40,49 +88,114 @@
     footer p{
         text-align: center;
     }
-    .bebidas{
-        flex-direction: column-reverse;
-        text-align: center;
-        img{
-            width: 70%;
-            height: 300px;
+}
+
+@media screen and (max-width:580px){
+    main{
+        .grid-galeria{
+            grid-template-columns: 1fr;
+            .grid-item{
+                grid-column: span 1;
+                grid-row: span 1;
+            }
         }
     }
-    .bienbenidos{
-        flex-direction: column-reverse;
-        align-items: center;
-        img{
-            width: 270px;
-            height: 280px;
+    footer{
+        div{
+            justify-content: center;
+            a{
+                i{
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        
         }
     }
 }
 
-@media screen and (max-width: 650px){
-    .bienbenidos{
-        flex-direction: column-reverse;
-        align-items: center;
-        img{
-            width: 250px;
-            height: 200px;
+@media screen and (max-width:510px){
+    main{
+        .bienbenidos{
+            img{
+                width: 400px;
+                height: 400px;    
+            }
+            div{
+                h2{
+                    font-size: 30px;
+                    &:hover{
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+        .acerca{
+            img{
+                width: 400px;
+                height: 400px;
+            }
+            div{
+                h2{
+                    font-size: 30px;
+                    &:hover{
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+        .form_wrap{
+            .cantact_info{
+                width: 100%;
+                .info_title{
+                    h1{
+                        font-size: 25px;
+                    }
+                }
+                .info_items{
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .form_contact{
+                width: 100%;
+                .user_info{
+                    input[type="button"]{
+                        width: 150px;
+                        align-self: center;
+                    }
+                }
+            }
         }
     }
-    .acerca{
+}
+
+@media screen and (max-width:460px){
+    main{
+        .bebidas{
+        flex-direction: column-reverse;
         img{
-            width: 150px;
-            height: 100px;
+            width: 300px;
+            height: 300px;
+        }
+        }  
+    }
+    footer{
+        div{
+            justify-content: center;
+            a{
+                i{
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        
         }
     }
 }
 
 @media screen and (max-width: 450px){
-    .grid-galeria{
-        grid-template-columns: 1fr;
-        .grid-item{
-            grid-column: span 1;
-            grid-row: span 1;
-        }
-    }
     header nav ul{
         flex-direction: column;
         text-align: center;
@@ -90,21 +203,116 @@
             margin: 5px;
         }
     }
-    .bebidas{
-        flex-direction: column-reverse;
-        text-align: center;
-        align-items: center;
-        img{
-            width: 70%;
-            height: 250px;
+    main{
+        .retiro{
+            img{
+                width: 300px;
+            }
         }
-    }
-    .bienbenidos{
-        flex-direction: column-reverse;
-        align-items: center;
-        img{
-            width: 250px;
-            height: 200px;
+        .envio{
+            img{
+                width: 300px;
+                height: 250px;
+            }            
+        }
+        .express{
+            img{
+                width: 300px;
+            }
         }
     }
 }
+
+@media screen and (max-width: 412px){
+    main{
+        .bienbenidos{
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .acerca{
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width:305px){
+    main{
+        .moes{
+            h2{
+                font-size: 50px;
+                padding: 5px;
+            }
+        }
+        .bebidas{
+        flex-direction: column-reverse;
+        img{
+            width: 250px;
+            height: 250px;
+        }
+        }
+        .bienbenidos{
+            img{
+                width: 270px;
+                height: 270px;
+            }
+            div{
+                h2{
+                    font-size: 25px;
+                    &:hover{
+                        font-size: 27px;
+                    }
+                }
+            }
+        }
+        .acerca{
+            img{
+                width: 270px;
+                height: 270px;
+            }
+            div{
+                h2{
+                    font-size: 25px;
+                    &:hover{
+                        font-size: 27px;
+                    }
+                }
+            }
+        }
+        .retiro{
+            img{
+                width: 250px;
+            }
+        }
+        .envio{
+            img{
+                width: 250px;
+                height: 250px;
+            }            
+        }
+        .express{
+            img{
+                width: 200px;
+            }
+        }  
+    }
+    footer{
+        div{
+            justify-content: center;
+            a{
+                i{
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        
+        }
+    }
+}
+
+
+

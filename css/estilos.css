@@ -86,7 +86,7 @@ main {
   background: black;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.868785) 10%, #d277c6 63%, black 90%); }
   main .moes {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/bjarne-fondo.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/bjarne-fondo.webp");
     width: 100%;
     height: 950px;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    main .moes h2 {
+    main .moes h1 {
       font-family: 'Alegreya Sans SC', sans-serif;
       color: white;
       font-size: 70px;
@@ -117,7 +117,7 @@ main {
     align-items: center;
     padding: 20px; }
     main .bebidas img {
-      width: 30%;
+      width: 500px;
       height: 500px;
       border-radius: 5px;
       -webkit-box-shadow: 0px 0px 25px 6px black;
@@ -210,34 +210,36 @@ main {
 /*----acerca de nosotros----*/
 main .bienbenidos {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
   main .bienbenidos img {
     border-radius: 5px;
     margin-top: 35px;
-    width: 550px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     transition: 1s; }
     main .bienbenidos img:hover {
       transform: scale3d(1.1);
-      -webkit-box-shadow: 0px 0px 86px 5px rgba(153, 57, 158, 0.56);
-      -moz-box-shadow: 0px 0px 86px 5px rgba(153, 57, 158, 0.56);
-      box-shadow: 0px 0px 86px 5px rgba(153, 57, 158, 0.56); }
+      -webkit-box-shadow: 0px 0px 20px 4px white;
+      -moz-box-shadow: 0px 0px 20px 4px white;
+      box-shadow: 0px 0px 20px 4px white; }
   main .bienbenidos div {
     margin: 50px;
     width: 50%;
     color: white;
     font-family: 'Alegreya Sans SC', sans-serif; }
-    main .bienbenidos div h2 {
+    main .bienbenidos div h1 {
       font-size: 40px;
       text-align: center;
       transition: 1s; }
-      main .bienbenidos div h2:hover {
+      main .bienbenidos div h1:hover {
         font-size: 45px;
         color: rgba(129, 44, 209, 0.491); }
     main .bienbenidos div p {
       font-size: 20px;
+      padding: 15px;
       text-align: center; }
 
 main .acerca {
@@ -248,15 +250,15 @@ main .acerca {
   flex-wrap: wrap; }
   main .acerca img {
     border-radius: 5px;
-    width: 550px;
+    width: 500px;
     height: 500px;
     margin-bottom: 25px;
     transition: 1s; }
     main .acerca img:hover {
       transform: scale3d(1.1);
-      -webkit-box-shadow: 0px 0px 86px 5px rgba(153, 57, 158, 0.56);
-      -moz-box-shadow: 0px 0px 86px 5px rgba(153, 57, 158, 0.56);
-      box-shadow: 0px 0px 86px 5px rgba(153, 57, 158, 0.56); }
+      -webkit-box-shadow: 0px 0px 20px 4px white;
+      -moz-box-shadow: 0px 0px 20px 4px white;
+      box-shadow: 0px 0px 20px 4px white; }
   main .acerca div {
     margin: 50px;
     width: 50%;
@@ -271,6 +273,7 @@ main .acerca {
         color: rgba(129, 44, 209, 0.491); }
     main .acerca div p {
       font-size: 20px;
+      padding: 15px;
       text-align: center; }
 
 /*----servicios----*/
@@ -279,17 +282,19 @@ main section .servicios {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-  main section .servicios h2 {
+  main section .servicios h1 {
     font-size: 35px;
     font-family: 'Alegreya Sans SC', sans-serif;
     color: white;
     margin: 15px;
     padding: 10px;
     transition: 1s; }
-    main section .servicios h2:hover {
+    main section .servicios h1:hover {
+      font-size: 45px;
       color: rgba(129, 44, 209, 0.491); }
   main section .servicios p {
-    font-size: 25px;
+    text-align: center;
+    font-size: 20px;
     font-family: 'Alegreya Sans SC', sans-serif;
     color: white; }
 
@@ -297,7 +302,7 @@ main .retiro {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-direction: row;
   margin: 10px; }
   main .retiro img {
     width: 500px;
@@ -308,7 +313,7 @@ main .retiro {
     color: white;
     margin: 15px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     transition: 1s; }
     main .retiro div h2:hover {
       color: rgba(129, 44, 209, 0.491); }
@@ -325,7 +330,7 @@ main .envio {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row-reverse;
   margin: 10px; }
   main .envio img {
     width: 550px;
@@ -337,7 +342,7 @@ main .envio {
     color: white;
     margin: 15px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     transition: 1s; }
     main .envio div h2:hover {
       color: rgba(129, 44, 209, 0.491); }
@@ -354,10 +359,11 @@ main .express {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-direction: row;
   margin: 10px; }
   main .express img {
     width: 450px;
+    padding-bottom: 10px;
     border-radius: 5px; }
   main .express div h2 {
     font-size: 25px;
@@ -365,7 +371,7 @@ main .express {
     color: white;
     margin: 15px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     transition: 1s; }
     main .express div h2:hover {
       color: rgba(129, 44, 209, 0.491); }
@@ -385,28 +391,29 @@ main .tiendaproducto {
   justify-content: center;
   text-align: center;
   flex-wrap: wrap; }
-  main .tiendaproducto div img {
-    width: 300px;
-    height: 300px; }
-  main .tiendaproducto div h2 {
-    font-size: 40px;
+  main .tiendaproducto div h1 {
+    font-size: 35px;
     font-family: 'Alegreya Sans SC', sans-serif;
     color: white;
-    border: 2px solid white;
-    padding: 10px; }
+    border: 1px solid rgba(129, 44, 209, 0.491);
+    transition: 1s; }
+    main .tiendaproducto div h1:hover {
+      background-color: rgba(129, 44, 209, 0.491); }
 
 main section .nuestrosproductos {
-  text-align: center;
-  padding: 35px; }
+  display: flex;
+  flex-wrap: wrap; }
   main section .nuestrosproductos h2 {
     font-size: 30px;
     font-family: 'Alegreya Sans SC', sans-serif;
-    color: white; }
-  main section .nuestrosproductos p {
-    font-size: 25px;
-    font-family: 'Alegreya Sans SC', sans-serif;
     color: white;
-    padding: 10px; }
+    text-align: left;
+    padding-left: 45px;
+    padding-bottom: 30px;
+    transition: 1s; }
+    main section .nuestrosproductos h2:hover {
+      font-size: 35px;
+      color: rgba(129, 44, 209, 0.491); }
 
 main .tienda {
   display: flex;
@@ -417,7 +424,10 @@ main .tienda {
   main .tienda div {
     width: 250px;
     height: 400px;
-    margin: 20px; }
+    margin: 20px;
+    transition: 1s; }
+    main .tienda div:hover {
+      transform: scale(1.1); }
     main .tienda div img {
       width: 100%;
       height: 270px; }
@@ -440,6 +450,119 @@ main .tienda {
         transform: scale3d(1.1);
         background-color: rgba(129, 44, 209, 0.491); }
 
+/*----contacto----*/
+main .form_wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 130px; }
+  main .form_wrap .cantact_info {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/bjarne-fondo.webp");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px; }
+    main .form_wrap .cantact_info::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.9; }
+    main .form_wrap .cantact_info .info_title {
+      position: relative;
+      z-index: 2;
+      color: white;
+      font-family: 'Alegreya Sans SC', sans-serif;
+      margin-bottom: 60px; }
+      main .form_wrap .cantact_info .info_title span {
+        font-size: 100px;
+        display: block;
+        text-align: center;
+        margin-bottom: 55px; }
+      main .form_wrap .cantact_info .info_title h1 {
+        font-size: 35px;
+        text-align: center; }
+    main .form_wrap .cantact_info .info_items {
+      position: relative;
+      z-index: 2;
+      color: white;
+      margin-top: 35px; }
+      main .form_wrap .cantact_info .info_items p {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600px;
+        margin-bottom: 10px; }
+        main .form_wrap .cantact_info .info_items p:nth-child(1) span {
+          font-size: 30px;
+          margin-right: 10px; }
+        main .form_wrap .cantact_info .info_items p:nth-child(2) span {
+          font-size: 50px;
+          margin-right: 15px;
+          margin-left: 4px; }
+  main .form_wrap .form_contact {
+    width: 54%;
+    padding: 30px 40px; }
+    main .form_wrap .form_contact h2 {
+      font-size: 25px;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 30px; }
+    main .form_wrap .form_contact .user_info {
+      display: flex;
+      flex-direction: column; }
+      main .form_wrap .form_contact .user_info label {
+        font-weight: 600px;
+        color: white; }
+      main .form_wrap .form_contact .user_info input {
+        width: 100%;
+        padding: 8px 0px 5px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px solid rgba(129, 44, 209, 0.491);
+        font-family: 'Alegreya Sans SC', sans-serif;
+        color: black;
+        font-size: 14px;
+        font-weight: 400; }
+      main .form_wrap .form_contact .user_info textarea {
+        width: 100%;
+        padding: 8px 0px 5px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px solid rgba(129, 44, 209, 0.491);
+        font-family: 'Alegreya Sans SC', sans-serif;
+        color: black;
+        font-size: 14px;
+        font-weight: 400;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 90px; }
+      main .form_wrap .form_contact .user_info input[type="button"] {
+        width: 180px;
+        background: black;
+        padding: 10px;
+        border: none;
+        border-radius: 25px;
+        align-self: flex-end;
+        color: white;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 1s; }
+        main .form_wrap .form_contact .user_info input[type="button"]:hover {
+          background: rgba(129, 44, 209, 0.491); }
+
 footer div {
   display: flex;
   justify-content: right;
@@ -460,80 +583,164 @@ footer p {
   align-items: center;
   justify-content: center; }
 
-@media screen and (max-width: 950px) {
-  .bebidas {
-    flex-direction: column-reverse;
-    text-align: center; }
-    .bebidas img {
-      width: 70%;
-      height: 400px; }
-  .grid-galeria {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px; }
-    .grid-galeria .grid-item {
-      grid-column: span 1;
-      grid-row: span 1; }
-  .bienbenidos {
+@media screen and (max-width: 1200px) {
+  main .bienbenidos {
     flex-direction: column-reverse;
     align-items: center; }
-    .bienbenidos img {
-      width: 350px;
-      height: 400px; }
-  .acerca img {
-    width: 350px;
-    height: 400px; } }
+  main section .nuestrosproductos {
+    justify-content: center;
+    align-items: center; }
+    main section .nuestrosproductos h2 {
+      text-align: center;
+      padding-top: 20px; } }
+
+@media screen and (max-width: 920px) {
+  main .tienda {
+    justify-content: space-around; } }
+
+@media screen and (max-width: 900px) {
+  main .bebidas {
+    flex-direction: column-reverse; }
+    main .bebidas img {
+      width: 450px;
+      height: 450px; } }
+
+@media screen and (max-width: 880px) {
+  main .grid-galeria {
+    grid-template-columns: repeat(2, 1fr); }
+    main .grid-galeria .grid-item {
+      grid-column: span 1;
+      grid-row: span 1; }
+  main .retiro {
+    flex-direction: column-reverse; }
+    main .retiro img {
+      width: 450px; }
+  main .envio {
+    flex-direction: column-reverse; }
+    main .envio img {
+      width: 450px; }
+  main .express {
+    flex-direction: column-reverse; }
+    main .express img {
+      width: 400px; }
+  footer div {
+    justify-content: center; }
+    footer div a i {
+      justify-content: center;
+      align-items: center; } }
 
 @media screen and (max-width: 700px) {
   header {
     flex-direction: column;
     position: static; }
   footer p {
-    text-align: center; }
-  .bebidas {
-    flex-direction: column-reverse;
-    text-align: center; }
-    .bebidas img {
-      width: 70%;
-      height: 300px; }
-  .bienbenidos {
-    flex-direction: column-reverse;
-    align-items: center; }
-    .bienbenidos img {
-      width: 270px;
-      height: 280px; } }
+    text-align: center; } }
 
-@media screen and (max-width: 650px) {
-  .bienbenidos {
-    flex-direction: column-reverse;
-    align-items: center; }
-    .bienbenidos img {
-      width: 250px;
-      height: 200px; }
-  .acerca img {
-    width: 150px;
-    height: 100px; } }
-
-@media screen and (max-width: 450px) {
-  .grid-galeria {
+@media screen and (max-width: 580px) {
+  main .grid-galeria {
     grid-template-columns: 1fr; }
-    .grid-galeria .grid-item {
+    main .grid-galeria .grid-item {
       grid-column: span 1;
       grid-row: span 1; }
+  footer div {
+    justify-content: center; }
+    footer div a i {
+      justify-content: center;
+      align-items: center; } }
+
+@media screen and (max-width: 510px) {
+  main .bienbenidos img {
+    width: 400px;
+    height: 400px; }
+  main .bienbenidos div h2 {
+    font-size: 30px; }
+    main .bienbenidos div h2:hover {
+      font-size: 35px; }
+  main .acerca img {
+    width: 400px;
+    height: 400px; }
+  main .acerca div h2 {
+    font-size: 30px; }
+    main .acerca div h2:hover {
+      font-size: 35px; }
+  main .form_wrap .cantact_info {
+    width: 100%; }
+    main .form_wrap .cantact_info .info_title h1 {
+      font-size: 25px; }
+    main .form_wrap .cantact_info .info_items p {
+      font-size: 15px; }
+  main .form_wrap .form_contact {
+    width: 100%; }
+    main .form_wrap .form_contact .user_info input[type="button"] {
+      width: 150px;
+      align-self: center; } }
+
+@media screen and (max-width: 460px) {
+  main .bebidas {
+    flex-direction: column-reverse; }
+    main .bebidas img {
+      width: 300px;
+      height: 300px; }
+  footer div {
+    justify-content: center; }
+    footer div a i {
+      justify-content: center;
+      align-items: center; } }
+
+@media screen and (max-width: 450px) {
   header nav ul {
     flex-direction: column;
     text-align: center; }
     header nav ul li {
       margin: 5px; }
-  .bebidas {
-    flex-direction: column-reverse;
-    text-align: center;
-    align-items: center; }
-    .bebidas img {
-      width: 70%;
-      height: 250px; }
-  .bienbenidos {
-    flex-direction: column-reverse;
-    align-items: center; }
-    .bienbenidos img {
+  main .retiro img {
+    width: 300px; }
+  main .envio img {
+    width: 300px;
+    height: 250px; }
+  main .express img {
+    width: 300px; } }
+
+@media screen and (max-width: 412px) {
+  main .bienbenidos img {
+    width: 300px;
+    height: 300px; }
+  main .acerca img {
+    width: 300px;
+    height: 300px; } }
+
+@media screen and (max-width: 305px) {
+  main .moes h2 {
+    font-size: 50px;
+    padding: 5px; }
+  main .bebidas {
+    flex-direction: column-reverse; }
+    main .bebidas img {
       width: 250px;
-      height: 200px; } }
+      height: 250px; }
+  main .bienbenidos img {
+    width: 270px;
+    height: 270px; }
+  main .bienbenidos div h2 {
+    font-size: 25px; }
+    main .bienbenidos div h2:hover {
+      font-size: 27px; }
+  main .acerca img {
+    width: 270px;
+    height: 270px; }
+  main .acerca div h2 {
+    font-size: 25px; }
+    main .acerca div h2:hover {
+      font-size: 27px; }
+  main .retiro img {
+    width: 250px; }
+  main .envio img {
+    width: 250px;
+    height: 250px; }
+  main .express img {
+    width: 200px; }
+  footer div {
+    justify-content: center; }
+    footer div a i {
+      justify-content: center;
+      align-items: center; } }
