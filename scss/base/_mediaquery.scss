@@ -122,7 +122,7 @@
                 height: 400px;    
             }
             div{
-                h2{
+                h1{
                     font-size: 30px;
                     &:hover{
                         font-size: 35px;
@@ -230,20 +230,108 @@
                 width: 300px;
                 height: 300px;
             }
+            div{
+                margin: auto;
+                width: auto;
+                p{
+                    font-size: 15px;
+                }
+            }
         }
         .acerca{
             img{
                 width: 300px;
                 height: 300px;
             }
+            div{
+                margin-top: 15px;
+                width: auto;
+                p{
+                    font-size: 15px;
+                }
+            }
         }
     }    
+}
+
+@media screen and (max-width:350px){
+    header{
+        .navbar-light{
+            .navbar-toggler{
+                font-size: 1rem;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    main{
+        .bebidas{
+            img{
+                width: 250px;
+                height: 250px;
+                margin-top: 10px;
+            }
+            div{
+                margin: auto;
+                width: auto;
+                h2{
+                    font-size: 20px;
+                    border: 1px solid $color-secundario;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+        .productos{
+            div{
+                width: 200px;
+                height: auto;
+                margin: 10px;
+                img{
+                height: 150px;
+                }
+                h3{
+                font-size: 15px;
+                }
+            }
+        }
+        section{
+            .servicios{
+                h1{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                    padding: 10px;
+                }
+            }
+        }
+        .tiendaproducto{
+            div{
+                h1{
+                    font-size: 25px;
+                    margin: 15px;
+                }
+            }
+        }
+        section{
+            .nuestrosproductos{
+                flex-direction: column;
+                h2{
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:305px){
     main{
         .moes{
-            h2{
+            h1{
                 font-size: 50px;
                 padding: 5px;
             }

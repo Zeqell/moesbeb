@@ -652,9 +652,9 @@ footer p {
   main .bienbenidos img {
     width: 400px;
     height: 400px; }
-  main .bienbenidos div h2 {
+  main .bienbenidos div h1 {
     font-size: 30px; }
-    main .bienbenidos div h2:hover {
+    main .bienbenidos div h1:hover {
       font-size: 35px; }
   main .acerca img {
     width: 400px;
@@ -705,12 +705,61 @@ footer p {
   main .bienbenidos img {
     width: 300px;
     height: 300px; }
+  main .bienbenidos div {
+    margin: auto;
+    width: auto; }
+    main .bienbenidos div p {
+      font-size: 15px; }
   main .acerca img {
     width: 300px;
-    height: 300px; } }
+    height: 300px; }
+  main .acerca div {
+    margin-top: 15px;
+    width: auto; }
+    main .acerca div p {
+      font-size: 15px; } }
+
+@media screen and (max-width: 350px) {
+  header .navbar-light .navbar-toggler {
+    font-size: 1rem; }
+    header .navbar-light .navbar-toggler:focus {
+      box-shadow: none; }
+  main .bebidas img {
+    width: 250px;
+    height: 250px;
+    margin-top: 10px; }
+  main .bebidas div {
+    margin: auto;
+    width: auto; }
+    main .bebidas div h2 {
+      font-size: 20px;
+      border: 1px solid rgba(129, 44, 209, 0.491); }
+    main .bebidas div p {
+      font-size: 15px; }
+  main .productos div {
+    width: 200px;
+    height: auto;
+    margin: 10px; }
+    main .productos div img {
+      height: 150px; }
+    main .productos div h3 {
+      font-size: 15px; }
+  main section .servicios h1 {
+    font-size: 25px; }
+  main section .servicios p {
+    font-size: 15px;
+    padding: 10px; }
+  main .tiendaproducto div h1 {
+    font-size: 25px;
+    margin: 15px; }
+  main section .nuestrosproductos {
+    flex-direction: column; }
+    main section .nuestrosproductos h2 {
+      font-size: 20px;
+      text-align: center; } }
 
 @media screen and (max-width: 305px) {
-  main .moes h2 {
+  main .moes h1 {
     font-size: 50px;
     padding: 5px; }
   main .bebidas {
