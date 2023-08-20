@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "nombre": "Malaria",
+        "descripcion": "De gran intensidad aromática y ataque amable",
+        "precio": 8000,
+        "imagen": "malaria-gin-ti.png"
+    },
+
+    {
+        "id": 2,
+        "nombre": "Malaria Black",
+        "descripcion": "Malaria Black es un gin contemporáneo en el que se destacan los frutos rojos, acompañado con notas especiadas y cítricas",
+        "precio": 12000,
+        "imagen": "malaria-black.webp"
+    },
+
+    {
+        "id": 3,
+        "nombre": "Set Malaria",
+        "descripcion": "Kit Premium de Malaria Gin, con caja de madera de fenólico de pino de 8mm, revestido con cetol nogal.",
+        "precio": 20000,
+        "imagen": "gin-box-malaria-tienda.png"
+    },
+
+    {
+        "id": 4,
+        "nombre": "Copon Malaria",
+        "descripcion": "Los copones son de cristal transparente, de excelente calidad.",
+        "precio": 5000,
+        "imagen": "malaria-gin-copon-tienda.webp"
+    },
+
+    {
+        "id": 5,
+        "nombre": "Citadelle",
+        "descripcion": "Esta ginebra francesa por excelencia es seca, estructurada y presenta un equilibrio entre finura e intensidad.",
+        "precio": 15000,
+        "imagen": "citadelle-tienda-sf.png"
+    },
+
+    {
+        "id": 6,
+        "nombre": "Citadelle Reserva",
+        "descripcion": "Esta ginebra francesa por excelencia es seca, estructurada y presenta un equilibrio entre finura e intensidad.",
+        "precio": 18000,
+        "imagen": "citadelle-reserva-tienda.webp"
+    },
+
+    {
+        "id": 7,
+        "nombre": "Citadelle Jardin De Ete",
+        "descripcion": "Inspirada en el jardín del Castillo de Bonbonnet, un entorno natural en el que crecen flores, frutas y plantas aromáticas.",
+        "precio": 20000,
+        "imagen": "Citadelle_JardinDete_750ml.jpg"
+    },
+
+    {
+        "id": 8,
+        "nombre": "Citadelle Extreme",
+        "descripcion": "Su carácter fresco y poético se ve acentuado por una crianza de 5 meses en barricas de cerezo, además de una esencia de madera marcada por frutos rojos y avellana fresca.",
+        "precio": 15000,
+        "imagen": "gin-citadelle-extreme-wild-blossom-tienda.webp"
+    },
+
+    {
+        "id": 9,
+        "nombre": "Copon Citadelle",
+        "descripcion": "Los copones son de cristal transparente, de muy alta calidad.",
+        "precio": 10000,
+        "imagen": "citadelle-copa-tienda.webp"
+    },
+
+    {
+        "id": 10,
+        "nombre": "Mom",
+        "descripcion": "Elaborada a partir de frutos rojos y exóticos ingredientes botánicos que le confieren un carácter extremadamente suave.",
+        "precio": 13000,
+        "imagen": "gin-mom.jpg"
+    },
+
+    {
+        "id": 11,
+        "nombre": "Mom Love",
+        "descripcion": "Elaborada con fresas y exoticos ingredientes botanicos.",
+        "precio": 15000,
+        "imagen": "mom-love-gin.jpg"
+    },
+
+    {
+        "id": 12,
+        "nombre": "Mom Rock",
+        "descripcion": "Ginebra elaborados con productos altamente seleccionados para un sabor unicio.",
+        "precio": 18000,
+        "imagen": "mom-rock-gin.webp"
+    },
+
+    {
+        "id": 13,
+        "nombre": "Set Mom",
+        "descripcion": "Set Premium Mom.",
+        "precio": 37000,
+        "imagen": "mom-gin-gift-set-tienda.png"
+    },
+
+    {
+        "id": 14,
+        "nombre": "Botanicos",
+        "descripcion": "Botanicos Premium seleccionados para un Gin unico.",
+        "precio": 7000,
+        "imagen": "botanicos-gin-tienda.jpg"
+    }
+
+]

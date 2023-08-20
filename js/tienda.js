@@ -1,3 +1,16 @@
+Swal.fire({
+    title: 'Por favor ingrese su edad',
+    icon: 'question',
+    input: 'range',
+    inputLabel: 'Su edad es',
+    inputAttributes: {
+        min: 18,
+        max: 70,
+        step: 1
+    },
+    inputValue: 18
+})
+
 let productosEnCarrito = [];
 let divProductos = document.getElementById("productos");
 let buscador = document.getElementById("buscador");
@@ -13,23 +26,8 @@ if (localStorage.getItem("carrito")) {
     localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
 }
 
-function buscarInfo(buscado, array) {
-    let busqueda = array.filter(
-        (productos) =>
-            productos.nombre.toLowerCase().includes(buscado.toLowerCase()) ||
-            productos.descripcion.toLowerCase().includes(buscado.toLowerCase())
-    );
-
-    if (busqueda.length == 0) {
-        coincidencia.innerHTML = "";
-        let nuevoDiv = document.createElement("div");
-        nuevoDiv.innerHTML = `<p> No hay coincidencias</p>`;
-        coincidencia.appendChild(nuevoDiv);
-        mostrarCatalogo(array);
-    } else {
-        coincidencia.innerHTML = "";
-        mostrarCatalogo(busqueda);
-    }
+function getBeb() {
+    return fetch("../json/tienda.json").then((response) => response.json());
 }
 
 function mostrarCatalogo(array) {
@@ -65,7 +63,7 @@ function cargarProductosCarrito(array) {
     modalBody.innerHTML = "";
 
     array.forEach((productoCarrito) => {
-        modalBody.innerHTML += `<div class="card border-primary mb-3" id ="productoCarrito${productoCarrito.id}" style="max-width: 540px;">
+        modalBody.innerHTML += `<div class="card border-primary mb-3" id ="productoCarrito${productoCarrito.id}" style="max-width: 400px;">
     <img class="card-img-top" height="300px" src="../img/${productoCarrito.imagen}" alt="${productoCarrito.descripcion}">
     <div class="card-body">
             <h4 class="card-title">${productoCarrito.nombre}</h4>
@@ -90,12 +88,11 @@ function cargarProductosCarrito(array) {
     });
 }
 
-buscador.addEventListener("input", () => {
-    buscarInfo(buscador.value, estanteria);
-});
-
 botonCarrito.addEventListener("click", () => {
     cargarProductosCarrito(productosEnCarrito);
 });
 
-mostrarCatalogo(estanteria);
+getBeb().then((beb) => {
+    mostrarCatalogo(beb);
+});
+
